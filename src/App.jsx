@@ -1,15 +1,20 @@
 import './App.css';
 
-import {ConditionalRendering as Paragraf} from './components/paragraf'
+import { default as Paragraf } from './components/paragraf';
+import { Component } from 'react';    // (*) we need to import React.Component to use class components
+                                      // here we imported only Component object from React library
+                                      // function components do not need this
 
-function App() {
-
-  return (
-    <>
-      <h1>z5 conditional operators and proxy</h1>
-      <Paragraf number={0}/>
-    </>
-  )
+class App extends Component {         // using Component that we imported - we imported just Component (*)
+                                      // so we don't have to reference it with React.Component
+  render(){
+    return (                          // render method renders and returns element
+      <>
+        <h1>z5 conditional operators and proxy</h1>
+        <Paragraf number={2}/>
+      </>
+    )
+  }
 }
 
-export default App
+export default App;
