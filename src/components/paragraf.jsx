@@ -1,5 +1,5 @@
 export function ConditionalRendering(props){
-  return  !isNaN(props.number) && ( props.number > 0 ?
+  return props.number && ( props.number >= 0 ?
     <>
       <p>Želim vam ugodan dan</p>
     </> :
@@ -8,3 +8,16 @@ export function ConditionalRendering(props){
     </>
   );
 }
+
+// isto kao:
+//
+// const ConditionalRendering = () => {
+//   const pozBr = <p>Želim vam ugodan dan</p>
+//   const negBr = <p>Želim vam ugodnu noć</p>
+//   const provjera = props.number >= 0 ? pozBr : negBr;
+//   return (
+//     <>
+//     { props.number && provjera}
+//     </>
+//   );
+// }
