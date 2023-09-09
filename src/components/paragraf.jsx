@@ -1,5 +1,5 @@
 export function ConditionalRendering(props){
-  return  !isNaN(props.number) && ( props.number > 0 ?
+  return  typeof props.number === 'number'  && ( props.number > 0 ?
     <>
       <p>Želim vam ugodan dan</p>
     </> :
