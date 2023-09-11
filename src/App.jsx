@@ -1,6 +1,6 @@
 import './App.css';
 
-import {ConditionalRendering as Paragraf} from './components/paragraf'
+import Paragraf from './components/paragraf'
 
 function App() {
 
