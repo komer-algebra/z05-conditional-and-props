@@ -1,8 +1,8 @@
-# React + Vite
+## React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Potrebno napraviti React aplikaciju koja će imati slijedeće:
+	1.	Napraviti novu React aplikaciju.
+	2.	Potrebno je napraviti dvije komponente
+	3.	Glavna komponenta poziva drugu komponentu ConditionalRendering sa svojstvom (props) number
+	4.	U ovisnusti o poslanom broju treba ispisati drukčiji tekst (koristit ternary ? :) - primjer veci od 5, manji od 5
+	5.	Ako se pošalje nedefinirani broj, komponenta ConditionalRendering ništa ne ispisuje
